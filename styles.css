@@ -34,7 +34,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  
 }
 
 /* A elements that don't have a class get default styles */
@@ -85,19 +85,23 @@ select {
 }
 
 main {
-  max-width: 1500px;
+  max-width: 1200px;
   margin: 0 auto;
+ 
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  margin: 30px 20px;
+ 
+ 
 }
 
 .nav__logo {
   width: 200px;
+
 }
 
 .nav__links--container a {
@@ -105,6 +109,10 @@ nav {
   color: var(--dark-grey);
   font-size: 1.2rem;
   margin-right: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1rem;
+ 
 
 }
 
@@ -114,7 +122,55 @@ nav {
   border-bottom: 2px solid var(--dark-grey);
   color: var(--peach);
   transition: 0.1s ease-in-out;
+  
 }
+
+/* Hero Setion */
+
+.hero {
+  
+  background: var(--peach);
+  border-radius: 10px;
+  margin: 0 20px;
+  padding: 80px 50px;
+
+}
+
+.light__button {
+  text-decoration: none;
+  padding: 15px 20px;
+  background: var(--light-grey);
+  color: var(--dark-grey);
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.light__button:hover {
+  background: var(--light-peach);
+  transition: 0.2s ease-in-out;
+  color: var(--light-grey);
+}
+
+.hero__text--container {
+  max-width: 60%;
+  
+}
+
+.hero__headline {
+  font-size: calc(1rem + 1.5vw);
+  color: var(--white);
+  margin-bottom: 30px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.hero__description {
+  margin-bottom: 50px;
+  color: var(--light-grey)
+}
+
+
 
 
 /* Responsive Nav */
@@ -205,6 +261,7 @@ nav {
   height: 100vh;
   background: rgba(0, 0, 0, 0.438);
   opacity: 0;
+  z-index: -1;
  
 
 }
@@ -213,4 +270,6 @@ nav {
   opacity: 1;
   transition: 0.2s ease-in-out;
 }
+
+
 
