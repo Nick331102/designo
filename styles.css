@@ -85,7 +85,7 @@ select {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
  
 }
@@ -132,7 +132,12 @@ nav {
   background: var(--peach);
   border-radius: 10px;
   margin: 0 20px;
-  padding: 80px 50px;
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  height: 600px;
 
 }
 
@@ -153,7 +158,10 @@ nav {
 }
 
 .hero__text--container {
-  max-width: 60%;
+ height: 350px;
+ width: 500px;
+  padding-left: 2rem;
+  z-index: 20;
   
 }
 
@@ -169,6 +177,20 @@ nav {
   margin-bottom: 50px;
   color: var(--light-grey)
 }
+
+.phone {
+  z-index: 10;
+}
+
+
+
+.hero__background {
+  background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+  
+
+}
+
+
 
 
 
