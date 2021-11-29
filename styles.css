@@ -326,6 +326,42 @@ nav {
   align-items: center;
 }
 
+/* CTA ******************************/
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta__container {
+  width: 90%;
+  background-color: var(--peach);
+  padding: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta__left {
+  width: 300px;
+}
+
+
+.cta__headline {
+  color: var(--light-grey);
+  font-size: calc(1rem + 2vw);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.cta__description {
+  color: var(--light-grey);
+}
+
+
+
 
 
 
@@ -492,15 +528,33 @@ nav {
       "app"
       "graphic";
   }
-/* Responsive Attibutes  */
-.attributes {
-grid-template-columns: repeat(1, 1fr);
 
+  /* Responsive Attibutes  */
+  .attributes {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
 }
+
+/* Responsive CTA  */
+@media (max-width:648px) {
+  .cta__container {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 20px;
+
+
+  }
+
+
+
+  .cta__left {
+    text-align: center;
+    width: 100%;
+  }
+
+  .cta__right {
+    margin-top: 50px;
+    text-align: center;
+  }
 }
-
-
-
-
-
-
