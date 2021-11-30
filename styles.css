@@ -332,6 +332,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: -150px;
 }
 
 .cta__container {
@@ -345,7 +346,7 @@ nav {
 }
 
 .cta__left {
-  width: 300px;
+  width: 400px;
 }
 
 
@@ -358,6 +359,73 @@ nav {
 
 .cta__description {
   color: var(--light-grey);
+}
+
+/* Footer *******************************/
+
+.footer {
+  margin-top: 80px;
+  background: var(--black);
+  padding: 140px 50px 50px 100px;
+}
+
+.footer__top--right p,
+.location__details,
+.footer__bottom--links--container {
+  color: var(--light-grey);
+}
+
+
+
+.footer__logo--dark {
+  width: 200px;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.footer__top--right {
+  display: flex;
+}
+
+.footer__top--right p {
+  margin-right: 30px;
+}
+
+.footer__top--right p:hover {
+  color: var(--peach);
+  transition: o.2s ease-in-out;
+  cursor: pointer;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__bottom--left {
+  display: flex;
+
+}
+
+
+.footer__bottom--right i {
+  margin-right: 10px;
+}
+
+.footer__bottom--right i:hover {
+  color: var(--peach);
+  transition: o.2s ease-in-out;
+  cursor: pointer;
+}
+
+.location__two {
+
+  margin-left: 50px;
+
 }
 
 
@@ -537,7 +605,7 @@ nav {
 }
 
 /* Responsive CTA  */
-@media (max-width:648px) {
+@media (max-width:800px) {
   .cta__container {
     flex-direction: column;
     justify-content: space-between;
@@ -556,5 +624,64 @@ nav {
   .cta__right {
     margin-top: 50px;
     text-align: center;
+  }
+}
+
+/* Responsive Footer */
+
+@media (max-width: 769px) {
+
+  .footer {
+    padding: 140px 0px 100px 0px;
+
+  }
+
+  .footer__top {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .footer__top--left {
+
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .footer__top--left img {
+    margin-right: 30px;
+  }
+
+  .footer__top--right {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .footer__top--right p {
+    margin-bottom: 10px;
+
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+  }
+
+  .footer__bottom--left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location__two {
+    margin: 30px 0 30px 0;
+  }
+
+  .footer__bottom--links--container {
+
+    text-align: center;
+
+
   }
 }
