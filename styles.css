@@ -527,7 +527,7 @@ nav {
 .services__title--two {
   color: var(--light-grey);
   letter-spacing: 2px;
-  font-size: calc(1rem + 1.5vw);
+  font-size: calc(1rem + 1vw);
   font-weight: 400;
 }
 
