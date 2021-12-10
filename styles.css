@@ -558,6 +558,7 @@ nav {
   justify-content: center;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
+
 }
 
 .about__hero--title {
@@ -577,37 +578,98 @@ nav {
   border-top-right-radius: 10px;
 }
 
-/* About Talent *****************************/  
- .about__talent {
+/* About Talent *****************************/
+.about__talent {
   margin: 80px 20px;
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
- 
- }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
- .about__talent img {
-   border-top-left-radius: 10px;
-   border-bottom-left-radius: 10px;
-   width: 100%;
-   object-fit: cover;
- }
+}
 
- .about__talent--text {
-   background: var(--features-text-bg);
-  
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   padding:  50px;
- }
+.about__talent img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
 
- .about__talent--headline {
+.about__talent--text {
+  background: var(--features-text-bg);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+  background-size: 80%;
+}
+
+.about__talent--headline {
   font-size: calc(1rem + 2vw);
   color: var(--peach);
   font-weight: 400;
   margin-bottom: 20px;
 
- }
+}
+
+/* About Locations */
+
+.about__locations {
+  margin: 80px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.about__locations--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  width: 100%;
+}
+
+.locations__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.locations__image {
+  margin-bottom: 0px;
+}
+
+.location {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+}
+
+.location__button {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  background: var(--peach);
+  color: var(--light-grey);
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+
+
+.location__button:hover {
+  background: var(--light-peach);
+  transition: 0.2s ease-in-out;
+  color: var(--light-grey);
+}
+
+
+
+
+
+
+
 
 
 
@@ -928,8 +990,8 @@ nav {
 
   .about__talent img {
     max-height: 500px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
   }
 
   .about__talent--text {
@@ -937,5 +999,13 @@ nav {
     border-bottom-right-radius: 10px;
     text-align: center;
     padding: 50px 20px;
+  }
+}
+
+/* Responsive about locations */
+
+@media(max-width: 900px) {
+  .about__locations--container {
+    grid-template-columns: repeat(1, 1fr)
   }
 }
