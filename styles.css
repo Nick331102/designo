@@ -577,6 +577,39 @@ nav {
   border-top-right-radius: 10px;
 }
 
+/* About Talent *****************************/  
+ .about__talent {
+  margin: 80px 20px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+ 
+ }
+
+ .about__talent img {
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   width: 100%;
+   object-fit: cover;
+ }
+
+ .about__talent--text {
+   background: var(--features-text-bg);
+  
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding:  50px;
+ }
+
+ .about__talent--headline {
+  font-size: calc(1rem + 2vw);
+  color: var(--peach);
+  font-weight: 400;
+  margin-bottom: 20px;
+
+ }
+
+
 
 
 
@@ -859,6 +892,7 @@ nav {
   .about__hero {
     display: flex;
     flex-direction: column-reverse;
+    margin: 80px 20px 0px 20px;
   }
 
   .about__hero--text {
@@ -881,5 +915,27 @@ nav {
     border-bottom-right-radius: 0px;
     border-top-left-radius: 10px;
 
+  }
+}
+
+/* Responsive about talent */
+
+@media (max-width: 800px) {
+  .about__talent {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 80px 20px;
+  }
+
+  .about__talent img {
+    max-height: 500px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 10px;
+  }
+
+  .about__talent--text {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    padding: 50px 20px;
   }
 }
