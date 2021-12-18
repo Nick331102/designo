@@ -703,6 +703,42 @@ display: flex;
   object-fit: cover;
 }
 
+/* main locations grid */
+
+.main__locations {
+  margin: 80px 20px;
+}
+
+.locations__grid--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+
+
+.locations__main--text {
+  background: var(--light-grey);
+  border-radius: 10px;
+  grid-area: text;
+}
+
+.locations__main--image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  grid-area: img;
+}
+
+
+
+
+
+
+
+
+
 
 
 
