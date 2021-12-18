@@ -382,6 +382,10 @@ nav {
   width: 200px;
 }
 
+.location__details {
+  font-size: .8rem;
+}
+
 .footer__top {
   display: flex;
   justify-content: space-between;
@@ -398,7 +402,7 @@ nav {
 
 .footer__top--right p:hover {
   color: var(--peach);
-  transition: o.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   cursor: pointer;
 }
 
@@ -419,7 +423,7 @@ nav {
 
 .footer__bottom--right i:hover {
   color: var(--peach);
-  transition: o.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   cursor: pointer;
 }
 
@@ -427,6 +431,12 @@ nav {
 
   margin-left: 50px;
 
+}
+
+.footer__bottom--links--container i:hover  {
+  cursor: pointer;
+  color: var(--peach);
+  transition: 0.3s ease-in-out;
 }
 
 /* Web Design Page ***************************/
@@ -605,7 +615,7 @@ nav {
 }
 
 .about__talent--headline {
-  font-size: calc(1rem + 2vw);
+  font-size: calc(1.5rem + 2vw);
   color: var(--peach);
   font-weight: 400;
   margin-bottom: 20px;
@@ -663,6 +673,42 @@ nav {
   transition: 0.2s ease-in-out;
   color: var(--light-grey);
 }
+
+/* Real deal */
+
+.real__deal {
+  margin: 80px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+
+.real__deal--text {
+  background: var(--features-text-bg);
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+  background-size: 80%;
+}
+
+
+.real__deal--image img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
 
 
 
@@ -859,7 +905,7 @@ nav {
 
 /* Responsive Footer */
 
-@media (max-width: 769px) {
+@media (max-width: 822px) {
 
   .footer {
     padding: 140px 0px 100px 0px;
@@ -912,7 +958,8 @@ nav {
 
   .footer__bottom--links--container {
 
-    text-align: center;
+    display: flex;
+    justify-content: center;
 
 
   }
@@ -1008,4 +1055,24 @@ nav {
   .about__locations--container {
     grid-template-columns: repeat(1, 1fr)
   }
+}
+
+
+
+/* Rsponsive real deal */
+
+@media (max-width: 800px) {
+  .real__deal {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .real__deal--text {
+    text-align: center;
+  }
+
+
+
+
+
 }
