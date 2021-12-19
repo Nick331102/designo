@@ -709,26 +709,76 @@ display: flex;
   margin: 80px 20px;
 }
 
-.locations__grid--container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
 
+.canada__container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+
+.loc__title {
+  font-weight: 600;
+}
 
 
 .locations__main--text {
-  background: var(--light-grey);
+  background: var(--features-text-bg);
   border-radius: 10px;
-  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 50px 0px 50px 70px;
+  background-image: url("/assets/shared/desktop/bg-pattern-two-circles.svg");
+  background-repeat: no-repeat;
+  
+  }
+
+
+  .locations__main--headline {
+    font-size: 2rem;
+    color: var(--peach);
+    font-weight: 500;
+  }
+
+.locations__main--details--container {
+
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 50px;
 }
+
+
 
 .locations__main--image img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  grid-area: img;
+  cursor: pointer;
+  
+}
+
+
+.locations__main--right {
+  margin-left: 50px;
+}
+
+.australia__container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.uk__container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 
@@ -1106,9 +1156,47 @@ display: flex;
   .real__deal--text {
     text-align: center;
   }
+}
 
 
+/* responsive main locations grid */
 
+@media (max-width: 750px) {
+  .canada__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
+  .locations__main--text {
+  padding: 50px;
+  }
+
+  .uk__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .australia__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .locations__main--details--container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .location__details--main {
+    text-align: center;
+  }
+
+  .locations__main--right {
+    margin: 30px 0 0 0;
+  }
+
+  .locations__main--headline {
+    text-align: center;
+  }
 
 }
