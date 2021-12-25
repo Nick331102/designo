@@ -132,7 +132,7 @@ nav {
 
   background: var(--peach);
   border-radius: 10px;
-  margin: 0 20px;
+  margin:  100px 20px;
 
   display: flex;
   justify-content: flex-start;
@@ -164,15 +164,15 @@ nav {
 }
 
 .hero__text--container {
-  height: 350px;
+  
   width: 60%;
-  padding-left: 2rem;
+  padding-left: 3rem;
   z-index: 20;
 
 }
 
 .hero__headline {
-  font-size: calc(1.3rem + 1.6vw);
+  font-size: calc(1.4rem + 1.3vw);
   color: var(--white);
   margin-bottom: 30px;
   line-height: 1.1;
@@ -199,7 +199,7 @@ nav {
 
 /* design section */
 .services {
-  margin: 80px 20px 120px 20px;
+  margin: 100px 20px 120px 20px;
   display: grid;
   ;
   grid-template-columns: repeat(2, 1fr);
@@ -245,31 +245,27 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/home/desktop/image-graphic-design.jpg");
+  background-image: url("assets/home/desktop/image-graphic-design.jpg");
   border-radius: 20px;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.web__design:hover {
+.web__design:hover,
+.app__design:hover,
+.graphic__design:hover
+ {
   box-shadow: inset 0 0 0 1000px rgba(197, 76, 20, 0.438);
-  transition: 0.2s ease-in-out
+  transition: 0.2s ease-in-out;
+  cursor:pointer;
 }
 
-.app__design:hover {
-  box-shadow: inset 0 0 0 1000px rgba(197, 76, 20, 0.438);
-  transition: 0.2s ease-in-out
-}
 
-.graphic__design:hover {
-  box-shadow: inset 0 0 0 1000px rgba(197, 76, 20, 0.438);
-  transition: 0.2s ease-in-out
-}
 
 .services__title {
   color: var(--light-grey);
   letter-spacing: 2px;
-  font-size: 2.5rem;
+  font-size: calc(1.2rem + 1.2vw);
   font-weight: 400;
 }
 
@@ -299,7 +295,7 @@ nav {
 
 .attributes {
 
-  margin: 80px 20px 120px 20px;
+  margin: 100px 20px 120px 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
@@ -641,7 +637,7 @@ nav {
 /* About Locations */
 
 .about__locations {
-  margin: 80px;
+  margin: 100px;
   display: flex;
   justify-content: center;
 
@@ -722,7 +718,7 @@ nav {
 /* main locations grid */
 
 .main__locations {
-  margin: 80px 20px;
+  margin: 100px 20px;
 }
 
 
@@ -801,7 +797,8 @@ nav {
 /* Contact Section */
 
 .contact {
-  margin: 80px 20px;
+  margin: 100px 20px;
+
 }
 
 .contact__form--container {
@@ -809,8 +806,11 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   background-color: var(--peach);
   border-radius: 10px;
-  padding: 50px;
+  padding: 50px 80px;
   gap: 50px;
+  background-image: url("/assets/contact/desktop/bg-pattern-hero-desktop.svg");
+  background-repeat: no-repeat;
+
 
 
 }
@@ -824,7 +824,7 @@ nav {
 
 .contact__title {
   margin-bottom: 20px;
-  font-size: calc(1rem + 2vw);
+  font-size: calc(1.4rem + 2.1vw);
   font-weight: 500;
   color: var(--white)
 }
@@ -841,24 +841,75 @@ nav {
   display: flex;
   flex-direction: column;
 
+
 }
+
+
 
 input,
 textarea {
   padding: 20px;
   outline: none;
   border: none;
-  background: var(--peach);
+  background-color: transparent;
   color: var(--white);
   border-bottom: 1px solid var(--white);
   resize: none;
+  width: 100%;
+
 
 }
 
+.input__group {
+  position: relative;
+
+}
+
+
+
+.error__message {
+  position: absolute;
+  top: 30px;
+  ;
+  right: 25px;
+  color: var(--light-grey);
+  opacity: 0;
+}
+
+.error__message.show {
+  opacity: 1;
+}
+
+.email__error {
+
+  position: absolute;
+  top: 30px;
+
+  right: 25px;
+  color: var(--light-grey);
+  opacity: 0;
+
+}
+
+.email__error.show {
+  opacity: 1;
+}
+
+.hello {
+  margin-left: 5px;
+}
+
+.fa-exclamation-circle {
+  margin-left: 5px;
+}
+
+
+
+
 .submit__button {
   margin-top: 20px;
-  padding: 15px 20px;
-  width: 150px;
+  padding: 10px;
+  width: 130px;
   text-transform: uppercase;
   color: var(--dark-grey);
   background-color: var(--features-text-bg);
@@ -996,7 +1047,7 @@ textarea {
 }
 
 /* responsive hero */
-@media (max-width: 869px) {
+@media (max-width: 920px) {
   .hero {
     flex-direction: column;
     justify-content: center;
@@ -1047,7 +1098,10 @@ textarea {
       'web'
       "app"
       "graphic";
+      margin-bottom: 180px;
   }
+
+
 
   /* Responsive Attibutes  */
   .attributes {
@@ -1105,7 +1159,7 @@ textarea {
 
   .footer__top--left img {
     margin-right: 20px;
-    5
+
   }
 
   .footer__top--right {
@@ -1132,12 +1186,19 @@ textarea {
     margin: 30px 0 30px 0;
   }
 
+
   .footer__bottom--links--container {
 
     display: flex;
     justify-content: center;
+  }
 
+  .footer__link:nth-child(1) {
+    margin-right: 0px;
+  }
 
+  .footer__link:nth-child(2) {
+    margin-right: 0px;
   }
 }
 
@@ -1289,4 +1350,15 @@ textarea {
     text-align: center;
   }
 
+}
+
+/* Responsive conatct form */
+
+@media(max-width: 834px) {
+  .contact__form--container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 40px 30px;
+
+
+  }
 }
