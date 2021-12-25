@@ -603,7 +603,7 @@ nav {
 
 /* About Talent *****************************/
 .about__talent {
-  margin: 80px 20px;
+  margin: 100px 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
@@ -628,7 +628,7 @@ nav {
 }
 
 .about__talent--headline {
-  font-size: calc(1.5rem + 2vw);
+  font-size: calc(1.5rem + 1.2vw);
   color: var(--peach);
   font-weight: 400;
   margin-bottom: 20px;
@@ -690,7 +690,7 @@ nav {
 /* Real deal */
 
 .real__deal {
-  margin: 80px 20px;
+  margin: 100px 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
