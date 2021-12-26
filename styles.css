@@ -140,7 +140,7 @@ nav {
   position: relative;
 
   overflow: hidden;
-  background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+  background-image: url("assets/home/desktop/bg-pattern-hero-home.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 100%;
@@ -221,7 +221,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/home/desktop/image-web-design-large.jpg");
+  background-image: url("assets/home/desktop/image-web-design-large.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
@@ -233,7 +233,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/home/desktop/image-app-design.jpg");
+  background-image: url("assets/home/desktop/image-app-design.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
@@ -460,7 +460,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/web-design/desktop/bg-pattern-intro-web.svg");
+  background-image: url("assets/web-design/desktop/bg-pattern-intro-web.svg");
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -623,7 +623,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   padding: 50px;
-  background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+  background-image: url("assets/about/desktop/bg-pattern-hero-about-desktop.svg");
   background-size: 80%;
 }
 
@@ -704,7 +704,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   padding: 50px;
-  background-image: url("/assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+  background-image: url("assets/about/desktop/bg-pattern-hero-about-desktop.svg");
   background-size: 80%;
 }
 
@@ -744,7 +744,7 @@ nav {
   justify-content: center;
   align-items: left;
   padding: 50px 0px 50px 70px;
-  background-image: url("/assets/shared/desktop/bg-pattern-two-circles.svg");
+  background-image: url("assets/shared/desktop/bg-pattern-two-circles.svg");
   background-repeat: no-repeat;
 
 }
@@ -809,7 +809,7 @@ nav {
   border-radius: 10px;
   padding: 50px 80px;
   gap: 50px;
-  background-image: url("/assets/contact/desktop/bg-pattern-hero-desktop.svg");
+  background-image: url("assets/contact/desktop/bg-pattern-hero-desktop.svg");
   background-repeat: no-repeat;
 
 
