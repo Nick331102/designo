@@ -74,6 +74,8 @@ select {
 }
 
 
+
+
 :root {
   --peach: #E7816B;
   --light-peach: #FFAD9B;
@@ -85,11 +87,15 @@ select {
   font-family: 'Jost', sans-serif;
 }
 
+
+
 main {
   max-width: 1100px;
   margin: 0 auto;
 
 }
+
+
 
 nav {
   display: flex;
@@ -449,6 +455,17 @@ nav {
   cursor: pointer;
   color: var(--peach);
   transition: 0.3s ease-in-out;
+}
+
+.footer__link a {
+  text-decoration: none;
+  color: var(--features-text-bg);
+  cursor: pointer;
+}
+
+.footer__link a:hover {
+  color: var(--peach);
+  transition: 0.2s ease-in-out;
 }
 
 /* Web Design Page ***************************/
@@ -957,6 +974,24 @@ textarea {
     position: relative;
   }
 
+  .clicked__overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.507);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+   opacity: 0;
+  }
+  
+  .clicked__overlay.show {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    z-index: 30;
+
+   
+  }
+
 
 
 
@@ -970,7 +1005,7 @@ textarea {
     border-radius: 50%;
     padding: 10px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 31;
   }
 
   .burger__line {
@@ -994,8 +1029,8 @@ textarea {
     padding: 50px;
     transform: translateY(-150%);
     transition: 0.3s ease-in-out;
-
-  }
+    z-index: 41;
+}
 
   .nav__links--container a {
     margin-bottom: 20px;
@@ -1007,10 +1042,11 @@ textarea {
     border-bottom: none;
   }
 
-  .show {
+  .nav__links--container.show {
     transform: translateY(0);
-
   }
+
+  
 
   .clicked .line-1 {
 
@@ -1029,18 +1065,7 @@ textarea {
 
 }
 
-.clicked__overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.438);
-  opacity: 0;
-  z-index: -1;
 
-
-}
 
 .cover {
   opacity: 1;

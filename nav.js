@@ -9,7 +9,7 @@ const overlay = document.querySelector(".clicked__overlay")
 burger.addEventListener('click', () => {
     navLinks.classList.toggle("show")
     burger.classList.toggle("clicked")
-    overlay.classList.toggle("cover")
+ overlay.classList.add("show")
    
 
 })

@@ -19,14 +19,15 @@
     <title>Contact</title>
   </head>
   <body>
+    <div class="clicked__overlay"></div>
     <main>
       <nav>
-        <div class="nav__logo--container">
+        <div class="nav__logo--container"> <a href="index.html">
           <img
             src="assets/shared/desktop/logo-dark.png"
             alt=""
             class="nav__logo"
-          />
+          /></a>
         </div>
         <div class="nav__links--container show">
           <a href="about.html" class="nav__link">Our Company</a>
@@ -56,8 +57,8 @@
               <div class="error__message">Can't be empty<i class="fas fa-exclamation-circle"></i></div>
             </div>
             <div class="input__group">
-              <input type="email" id="email" placeholder="Email Address" />
-              <div class="email__error">Invalid email <i class="fas fa-exclamation-circle"></i></div>
+              <input type="email" id="input" placeholder="Email Address" />
+              <div class="error__message">Invalid email <i class="fas fa-exclamation-circle"></i></div>
             </div>
             <div class="input__group">
               <input
