@@ -1,10 +1,9 @@
 /* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
-
 /* Remove default margin */
 body,
 h1,
@@ -38,9 +37,7 @@ body {
 }
 
 /* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
+
 
 /* Make images easier to work with */
 img,
@@ -953,19 +950,6 @@ textarea {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Responsive Nav */
 
 @media (max-width: 650px) {
@@ -981,16 +965,16 @@ textarea {
     left: 0;
     width: 100vw;
     height: 100vh;
-   display:block;
+    opacity: 0;
+   
+    
   }
   
   .clicked__overlay.cover {
-    display:none;
-    transition: 0.3s ease-in-out;
-    z-index: 30;
-
-   
-  }
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+  z-index: 30;
+}
 
 
 
@@ -1002,11 +986,25 @@ textarea {
     background: transparent;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    padding: 10px;
+   padding: 10px;
     cursor: pointer;
     z-index: 31;
   }
+
+  .hamburger__menu.clicked .line-1 {
+
+    transform: rotate(-45deg) translate(-5px, 6px)
+  }
+
+  .hamburger__menu.clicked .line-2 {
+    opacity: 0;
+  }
+
+  .hamburger__menu.clicked .line-3 {
+
+    transform: rotate(45deg) translate(-2.9px, -5px);
+  }
+
 
   .burger__line {
     width: 100%;
@@ -1031,6 +1029,9 @@ textarea {
     transition: 0.3s ease-in-out;
     z-index: 41;
 }
+.nav__links--container.slide {
+  transform: translateY(0%);
+}
 
   .nav__links--container a {
     margin-bottom: 20px;
@@ -1042,35 +1043,18 @@ textarea {
     border-bottom: none;
   }
 
-  .nav__links--container.show {
-    transform: translateY(0);
-  }
 
   
 
-  .clicked .line-1 {
+  
 
-    transform: rotate(-45deg) translate(-5px, 6px)
-  }
-
-  .clicked .line-2 {
-    opacity: 0;
-  }
-
-  .clicked .line-3 {
-
-    transform: rotate(45deg) translate(-2.9px, -5px);
-  }
 
 
 }
 
 
 
-.cover {
-  opacity: 1;
-  transition: 0.2s ease-in-out;
-}
+
 
 /* responsive hero */
 @media (max-width: 920px) {
