@@ -364,7 +364,7 @@ nav {
 .footer {
   margin: 80px auto 0 auto;
   background: var(--black);
-  padding: 100px 50px 50px 50px;
+  padding: 130px 50px 50px 50px;
 }
 
 .footer__content--container {
@@ -376,6 +376,13 @@ nav {
 .location__details,
 .footer__bottom--links--container {
   color: var(--light-grey);
+}
+
+.footer__line {
+  background: rgba(128, 128, 128, 0.336);
+  width:100%;
+  height: 2px;
+  margin: 0 auto 50px auto;
 }
 
 
@@ -391,7 +398,7 @@ nav {
 .footer__top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .footer__top--right {
@@ -883,8 +890,6 @@ textarea {
 
 }
 
-
-
 .error__message {
   position: absolute;
   top: 30px;
@@ -898,21 +903,6 @@ textarea {
   opacity: 1;
 }
 
-.email__error {
-
-  position: absolute;
-  top: 30px;
-
-  right: 25px;
-  color: var(--light-grey);
-  opacity: 0;
-
-}
-
-.email__error.show {
-  opacity: 1;
-}
-
 .hello {
   margin-left: 5px;
 }
@@ -920,9 +910,6 @@ textarea {
 .fa-exclamation-circle {
   margin-left: 5px;
 }
-
-
-
 
 .submit__button {
   margin-top: 20px;
