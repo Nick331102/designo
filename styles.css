@@ -136,12 +136,10 @@ nav {
   background: var(--peach);
   border-radius: 10px;
   margin:  100px 20px;
-
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
-
   overflow: hidden;
   background-image: url("assets/home/desktop/bg-pattern-hero-home.svg");
   background-size: contain;
@@ -175,7 +173,7 @@ nav {
 }
 
 .hero__headline {
-  font-size: calc(1.4rem + 1.3vw);
+  font-size: calc(1.4rem + 1vw);
   color: var(--white);
   margin-bottom: 30px;
   line-height: 1.1;
@@ -366,7 +364,12 @@ nav {
 .footer {
   margin: 80px auto 0 auto;
   background: var(--black);
-  padding: 140px 50px 50px 50px;
+  padding: 100px 50px 50px 50px;
+}
+
+.footer__content--container {
+  max-width: 1100px;
+ margin: 0 auto;
 }
 
 .footer__top--right p,
@@ -965,13 +968,13 @@ textarea {
     left: 0;
     width: 100vw;
     height: 100vh;
-    opacity: 0;
+    display:none;
    
     
   }
   
   .clicked__overlay.cover {
-  opacity: 1;
+  display:block;
   transition: 0.3s ease-in-out;
   z-index: 30;
 }
@@ -1145,7 +1148,7 @@ textarea {
 
 /* Responsive Footer */
 
-@media (max-width: 822px) {
+@media (max-width: 860px) {
 
   .footer {
     padding: 140px 0px 100px 0px;
@@ -1362,7 +1365,7 @@ textarea {
 
 }
 
-/* Responsive conatct form */
+/* Responsive contact form */
 
 @media(max-width: 834px) {
   .contact__form--container {
