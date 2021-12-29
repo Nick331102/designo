@@ -902,6 +902,30 @@ textarea {
 .error__message.show {
   opacity: 1;
 }
+.error__message--email {
+  position: absolute;
+  top: 30px;
+  ;
+  right: 25px;
+  color: var(--light-grey);
+  opacity: 0;
+}
+
+.error__message--email.show {
+  opacity: 1;
+}
+.error__message--phone {
+  position: absolute;
+  top: 30px;
+  ;
+  right: 25px;
+  color: var(--light-grey);
+  opacity: 0;
+}
+
+.error__message--phone.show {
+  opacity: 1;
+}
 
 .hello {
   margin-left: 5px;
@@ -1288,7 +1312,7 @@ textarea {
 
 /* Responsive about locations */
 
-@media(max-width: 900px) {
+@media(max-width: 970px) {
   .about__locations--container {
     grid-template-columns: repeat(1, 1fr)
   }
